@@ -1,0 +1,193 @@
+:root {
+    --bg-color: #f4f7f6;
+    --card-bg: #ffffff;
+    --text-color: #333333;
+    --primary-color: #0056b3;
+    --border-color: #cccccc;
+    --progress-bg: #e0e0e0;
+}
+
+ body.dark-mode {
+    --bg-color: #1e1e2e;
+    --card-bg: #2d2d3f;
+    --text-color: #f1f1f1;
+    --primary-color: #4da6ff;
+    --progres-bg: #44445c;
+}
+
+body {
+    font-family: "Segoe Ui", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Header Profil */
+header{
+    background-color:v var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    margin-bottom: 20px;
+}
+
+.profil-info {
+   display: flex;
+   align-items: center;
+   gap: 20px;
+}
+
+.avatar {
+   width: 70px;
+   height: 70px;
+   background-color: #bbb;
+   border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 30px;
+}
+
+nav {
+   display: flex;
+   gap: 10px;
+   align-items: center;
+}
+
+nav a {
+   color: var(--text-color);
+   text-decoration: none;
+   padding: 5px 10px;
+   border-radius: 5px;
+   border: 1px solid var(--border-color);
+}
+
+#btn-theme {
+   cursor: pointer;
+   padding: 6px 12px;
+   border-radius: 5px;
+   background-color: var(--primary-color);
+   color: #fff;
+   border: none;
+}
+
+/* Layout Utama (2 Kolom sesuai sketsa) */
+.main-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: start;
+}
+
+.card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.card h2 {
+   margin-top: 0;
+   border-bottom: 2px solid var(--primary-color);
+   padding-bottom: 5px;
+}
+
+/* skill Progress Bar */
+.skill-item {
+   margin-bottom: 15px;
+}
+
+.skill-name {
+   display: block;
+   font-weight: bold;
+   margin-bottom: 5px;
+}
+
+ .progres-bar {
+    background-color: var(--progres-bg);
+    border-radius: 10px;
+    height: auto;
+    overflow: visible;
+ }
+
+ .profil-fill2 {
+   background-color: var(--primary-color);
+   height: 100%;
+ }
+ 
+.form-group{
+    margin-bottom: 15px;
+}
+
+.form-group label{
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-goup input,
+.form-group textarea{
+    width: 100px;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+}
+
+.skill {
+    margin: 15px 0;
+}
+
+.bar {
+    width: 100%;
+    height: 12px;
+    background-color: #ddd;
+    border-radius: 10px;
+    margin-top: 6px;
+}
+
+.progress {
+    height: 12px;
+    background-color: purple;
+    border-radius: 10px;
+    text-align: right;
+    color: white;
+    font-size: 9px;
+    line-height: 12px;
+    padding-right: 5px;
+    box-sizing: border-box;
+}
+.skill {
+    margin-bottom: 20px;
+}
+
+.skill-name {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.progress {
+    width: 100%;
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: purple;
+    border-radius: 10px;
+}
